@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(img/sdo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Navbar */
+
+nav {
+    background: #222;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00c3ff;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 10%;
+    min-height:100vh;
+}
+
+h2{
+    margin-bottom:20px;
+    border-bottom:2px solid white;
+    padding-bottom:10px;
+}
+
+p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    margin:10px 5px 0 0;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00c3ff;
+    color:white;
+}
+
+/* DASHBOARD BOXES */
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* FORM */
+form {
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:8px;
+    max-width:600px;
+}
+
+form input, form select {
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+form button {
+    padding:10px 15px;
+    background: #222;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius: 7px;
+}
+
+form button:hover {
+    background: #fff;
+    color: #222;
+    border: 2px solid #222;
+    border-radius: 7px;
+}
+
+/* TRACK RESULT */
+.result {
+    margin-top:20px;
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:8px;
+}
+
+.int {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.btnn {
+    padding: 6px;
+    border: none;
+    background: #99bab9;
+    color: #faedcd;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav ul {
+        flex-direction:column;
+    }
+}
