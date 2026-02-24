@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sdo.css">
+    <link rel="shortcut icon" href="img/sdo1.jpg" type="image/x-icon">
+    <title>SDO Tapat System</title>
+</head>
+<body>
+
+
+    <nav>
+        <h1>SDO TAPAT System</h1>
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#submit">Submit</a></li>
+        <li><a href="#track">Track</a></li>
+        <li><a href="#archive">Archive</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <h2>Welcome Section</h2>
+        <p><strong>Welcome to the SDO TAPAT Digital Document Routing & Tracking System</strong></p>
+        <p>This system is designed to improve document routing efficiency, reduce paper dependency, and enhance transparency within the office. Through digital submission, real-time monitoring, and centralized tracking, document processing becomes faster, more accurate, and more accountable.</p>
+
+        <h3>Our Purpose</h3>
+        <p>✔ Improve document processing speed</p>
+        <p>✔ Reduce incidents of misplaced or lost documents</p>
+        <p>✔ Provide real-time status updates</p>
+        <p>✔ Strengthen accountability among employees</p>
+        <p>✔ Digitize manual logbook and Excel-based routing systems</p>
+
+        <h3>Get Started</h3>
+        <a href="#submit" class="btn">Submit a Document</a>
+        <a href="#track" class="btn">Track a Document</a>
+        <a href="#dashboard" class="btn">View Dashboard</a>
+    </section>
+
+    <!-- DASHBOARD PAGE -->
+    <section id="dashboard">
+        <h2>Document Monitoring Overview</h2>
+        <div class="dashboard">
+        <div class="card">Total Documents Received: <span id="totalDocs">0</span></div>
+        <div class="card">Ongoing: <span id="ongoingDocs">0</span></div>
+        <div class="card">Pending: <span id="pendingDocs">0</span></div>
+        <div class="card">Completed: <span id="completedDocs">0</span></div>
+        <div class="card">Returned: <span id="returnedDocs">0</span></div>
+        </div>
+    </section>
+
+    <!-- SUBMIT PAGE -->
+    <section id="submit">
+        <h2>Digital Document Submission</h2>
+        <p>Please fill out the required details below:</p>
+
+        <form id="docForm">
+        <input type="text" id="title" placeholder="Document Title" required>
+        <input type="text" id="type" placeholder="Document Type" required>
+        <input type="text" id="office" placeholder="Originating Office" required>
+        <input type="date" id="date" required>
+        <input type="text" id="personnel" placeholder="Assigned Personnel" required>
+        <input type="file" required>
+        <button type="submit">Submit Document</button>
+        </form>
+
+        <p id="trackingOutput"></p>
+    </section>
+
+    <!-- TRACK PAGE -->
+    <section id="track">
+        <h2>Track Your Document</h2>
+        <p>Enter Tracking Number:</p>
+        <input class="int" type="text" id="trackInput" placeholder="SDO-2026-000001">
+        <button class="btnn" onclick="trackDocument()">Track</button>
+
+        <div id="trackResult" class="result" style="display:none;"></div>
+    </section>
+
+    <!-- ARCHIVE PAGE -->
+    <section id="archive">
+        <h2>Digital Archive</h2>
+        <p>All completed documents are stored securely in the centralized system.</p>
+        <p>You may search documents by:</p>
+        <p>✔ Title</p>
+        <p>✔ Date</p>
+        <p>✔ Office</p>
+        <p>✔ Tracking Number</p>
+        <p>This reduces paper usage and ensures easy retrieval anytime.</p>
+    </section>
+    
+
+    <script src="sdo.js"></script>
+</body>
+</html>
