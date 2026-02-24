@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'system-ui', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #ffe9ef;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Playwrite AT", cursive;
+    font-size: 28px;
+    color: #b66878;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 60px;
+    /* background: #915e56; */
+    /* background: #b66878; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    color: #b66878;
+    margin-left: 40px;
+    font-size: 28px;
+    border: 1px solid #b66878;
+    padding: 4px 8px;
+    border-radius: 7px;
+}
+
+.description {
+    width: 80%;
+    text-align: center;
+    margin-left: 130px;
+
+}
+
+h4 {
+    color: #b66878;
+    margin-top: 30px;
+    font-family: "Playwrite AT", cursive;
+}
+
+p {
+    color: #b66878;
+    margin-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+ul li a {
+    color: #915e56;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
+.main-menu {
+    margin-right: 30px;
+}
+
+.closeBtn, .menuBtn {
+    font-size: 28px;
+    margin: 0 20px;
+    display: none;
+    color: #b66878;
+}
+
+/* HOME */
+
+.container {
+    width: 80%;
+    height: 60vh;
+    color: #b66878;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 120px;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+    width: 45%;
+    height: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.form-section  {
+    width: 45%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #915e56;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c98895;
+}
+
+/* END */
+
+hr {
+    margin-top: 40px;
+}
+
+.main {
+    width: 80%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #915e56;
+    cursor: pointer;
+    transform: 0.3s;
+}
+
+.left button:hover {
+    background: #c98895;
+}
+
+.right {
+    width: 55%;
+}
+
+.right textarea {
+    width: 100%;
+    height: 290px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0056b3;
+    margin-top: 20px;
+}
+
+/* FEEDBACK */
+
+#feedback {
+    background: transparent;
+    width: 80%;
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.ttext {
+    width: 100%;
+
+}
+
+#contacts {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    color: #222;
+    margin-top: 40px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 700px) {
+    
+    ul {
+        display: none;
+    }
+
+    ul li {
+        display: block;
+        margin: 20px;
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .closeBtn {
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    #menu {
+        width: 100%;
+        background: #c98895;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: 60px;
+    }
+
+    .container {
+        margin-left: 60px;
+    }
+
+    .main {
+        margin-left: 60px;
+    }
+
+    #feedback {
+        margin-left: 60px;
+    }
+}

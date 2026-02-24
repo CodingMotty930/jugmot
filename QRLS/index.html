@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qrlsStyle.css">
+    <title>teamQrls</title>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <h3>QRLS</h3>
+        <div class="main-menu">
+
+            <span class="menuBtn" onclick="openMenu()">&#9776</span>
+            <span class="closeBtn" onclick="closeMenu()">&#9746</span>
+
+            <ul id="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#description">DESCRIPTION</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECTION -->
+
+    <!-- DESCRIPTION -->
+
+    <section class="description">
+        <h4>DESCRIPTION</h4>
+        <p>"Letter to My Future Self" serves like a digital time capsule, where users can create personal messages or letters to their future selves and receive them back on a chosen date. Individuals can express their thoughts, feelings, dreams, and goals in a meaningful and safe environment through the platform.
+
+        Additionally, after writing a letter, users can choose the date they want to receive it—few months, a year, or on a specific date in the future—and they will also enter their email address for contact or where they will receive their message back. This service allows users to reflect on their previous self, past mistakes, mindset, and then their growth and progress, by automatically sending the letter back to them at the scheduled date.
+
+        The website is important as it can help users preserve memories that they can review at any moment, especially for people who wants to keep memories or just when you feel like you want to recall the experiences you lived in.</p>
+
+        <br>
+
+        <h4>MISSION</h4>
+        <p>We will provide safe and creative platform where users can write messages to their future selves, reflect on their present thoughts and dreams. The platform is designed to promote self awareness, emotional well-being and continuity of personal growth by allowing users to reconnect with who they are and see how far they become. The project aim to create a supportive digital space that values users privacy and experiences.
+
+
+        <h4>VISION</h4>
+
+        <p>Our vision is to become a digital space that inspires individuals to reflect on their lives, believe in their dreams, and stay connected to their personal journeys. The platform envisions a world where self-reflection is encouraged, personal stories and aspirations are valued and preserved as source of motivation. By offering a creative digital environment, the project seeks to empower users to learn the past, appreciate growth, and move forward with confidence and purpose.</p>
+    </section>
+
+    <h2>Letter for my future self.</h2>
+
+    <div class="container">
+        
+        <section class="home">
+
+            <textarea placeholder="Enter your message..."></textarea>
+
+            <div class="form-section">
+                <label>Email :</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Duration:</label>
+                <select>
+                    <option>5 Months</option>
+                    <option>6 Months</option>
+                    <option>7 Months</option>
+                    <option>8 Months</option>
+                    <option>9 Months</option>
+                    <option>1 Year</option>
+                    <option>2 Years</option>
+                    <option>3 Years</option>
+                    <option>4 Years</option>
+                    <option>5 Years</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <!-- WHAT DO YOU FEEL -->
+
+    <h2>WHAT DO YOU FEEL?</h2>
+
+    <div class="main">
+        <div class="left">
+            <button onclick="showQuote('happy')">Happy</button>
+            <button onclick="showQuote('sad')">Sad</button>
+            <button onclick="showQuote('lonely')">Lonely</button>
+            <button onclick="showQuote('afraid')">Afraid</button>
+            <button onclick="showQuote('pressured')">Pressured</button>
+        </div>
+
+        <div class="right">
+            <textarea id="quoteArea" placeholder="Your quote will appear here..."></textarea>
+        </div>
+    </div>
+
+
+        <!-- FEEDBACK -->
+
+    <section id="feedback">
+        <h2>FEEDBACK</h2>
+        <form onsubmit="submitFeedback(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea class="ttext" rows="4" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+        <!-- CONTACTS -->
+
+    <section id="contacts">
+        <h2>CONTACTS</h2>
+        <p>Email: sample@gmail.com</p>
+        <p>Phone: 09sample</p>
+        <p>Address: Paranaque City</p>
+    </section>
+
+        <!-- FOOTER -->
+
+    <footer>
+        &copy; 2026 QRLS | All Rights Reserved | mot
+    </footer>
+
+
+    <script src="qrlsMain.js"></script>
+</body>
+</html>
